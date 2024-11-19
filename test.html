@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My eCommerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General styles for the header */
+        .header-container {
+            background-color: #f8f8f8; /* Light background */
+            padding: 20px; /* Padding for spacing */
+            display: flex; /* Flexbox for alignment */
+            justify-content: space-between; /* Space between logo and nav */
+            align-items: center; /* Center items vertically */
+        }
+
+        /* Logo styles */
+        .logo {
+            font-size: 24px; /* Font size for logo */
+            font-weight: bold; /* Bold text */
+            color: #333; /* Dark text color */
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style: none; /* Remove default list styling */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+            display: flex; /* Flexbox for horizontal alignment */
+        }
+
+        nav ul li {
+            margin-left: 20px; /* Space between nav items */
+            position: relative; /* For absolute positioning of cart count */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: #333; /* Dark text color */
+            padding: 10px 15px; /* Padding for clickable area */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Transition effects */
+        }
+
+        /* Hover effect for links */
+        nav ul li a:hover {
+            background-color: #007bff; /* Blue background on hover */
+            color: white; /* White text on hover */
+        }
+
+        /* Cart icon styles */
+        nav ul li a .cart-count {
+            background-color: red; /* Background color for count */
+            color: white; /* Text color */
+            border-radius: 50%; /* Make it circular */
+            padding: 2px 6px; /* Padding for size */
+            position: absolute; /* Position it relative to parent */
+            top: -5px; /* Adjust as necessary */
+            right: -10px; /* Adjust as necessary */
+            font-size: 12px; /* Font size */
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px; /* Padding for main content */
+            text-align: center; /* Center text */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column; /* Stack items on small screens */
+                align-items: flex-start; /* Align items to the start */
+            }
+            nav ul {
+                flex-direction: column; /* Stack nav items vertically */
+                align-items: flex-start; /* Align items to the start */
+            }
+            nav ul li {
+                margin-left: 0; /* Remove left margin */
+                margin-bottom: 10px; /* Space between items */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="home.html" style="text-decoration: none;"><h1 class="logo">My eCommerce</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li> 
+                    <li><a href="product_list.html">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="../account/login.html">Login</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Welcome to My eCommerce Website!</h2>
+        <p>Explore our products and add them to your cart.</p>
+    </main>
+    
+    <footer>
+        <div class="footer-container" style="text-align: center; padding: 20px; background-color: #f8f8f8;">
+            <p>&copy; 2024 My eCommerce. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

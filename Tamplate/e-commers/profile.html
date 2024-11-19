@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home - My eCommerse websit</title>
+    <title>profile - My eCommerse websit</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Efrem Y.</a>
                         <ul class="dropdown-content">
-                            <li><a href="#">Profile</a></li>
+                            <li><a href="profile.html">Profile</a></li>
                             <li><a href="#">Settings</a></li>
                             <li><a href="#">Log Out</a></li>
                         </ul>
@@ -39,40 +39,66 @@
     
     
 <main>
-   <section class="banner">
-   <h2>Wellcome to Our Store!</h2>
-   <p>Discover amazing products at unbeatable prices</p>
-   </section>
 
-   <section class="featured-products">
-    <h2>featured Products</h2>
+    <h3>Personal info</h3>
+<form action="">
 
-    <div class="products-grid">
-        <img src="" alt="image not found">
-        <h3>Product Name</h3>
-        <p>200 ETB</p>
-        <a href="detail_view.html">view Detail</a>
+    <div>
+        <label for="first_name">First Name</label>
+        <input type="text" name="" id="first_name" value="Efrem">
+    
     </div>
-    <div class="products-grid">
-        <img src="" alt="image not found">
-        <h3>Product Name</h3>
-        <p>200 ETB</p>
-        <a href="detail_view.html">view Detail</a>
+   
+    <div>
+        <label for="last_name">Last Name</label>
+        <input type="text" name="" id="last_name" value="Yohanis">
+      
     </div>
-    <div class="products-grid">
-        <img src="" alt="image not found">
-        <h3>Product Name</h3>
-        <p>200 ETB</p>
-        <a href="detail_view.html">view Detail</a>
+    
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email" value="efrem@test.com">
+      
     </div>
-    <div class="products-grid">
-        <img src="" alt="image not found">
-        <h3>Product Name</h3>
-        <p>200 ETB</p>
-        <a href="detail_view.html">view Detail</a>
+    
+    <div>
+        <label for="PHONE"> Phone:</label>
+        <input type="tel" name="" id="PHONE" value="25255232342">
+      
     </div>
-       
-   </section>
+    
+    <div>
+        <label for="Address">Address:</label>
+        <input type="text" name="" id="Address" value="bole">
+    </div>
+  <button type="submit">update</button>
+</form>
+ 
+<h3>Trnasaction history</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2023-10-01</td>
+            <td>Wireless Headphones</td>
+            <td>1</td>
+            <td>$89.99</td>
+        </tr>
+        <tr>
+            <td>2023-09-15</td>
+            <td>Smartphone Case</td>
+            <td>1</td>
+            <td>$19.99</td>
+        </tr>
+    </tbody>
+</table>
 </main>
     
 <footer>
